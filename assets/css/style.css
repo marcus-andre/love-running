@@ -5,6 +5,15 @@
   box-sizing: border-box; /* so that later when we set the height or width to an element, it will be applied to the entire element, including the border. */
 }
 
+/* General styles */
+body {
+    min-height: 100vh; /*allow it to stretch larger than the height of the screen when there isnt enough content on the page that the user needs to scroll.*/
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+}   
+
 /* Header */
 header {
   background-color: lightcoral;
@@ -13,6 +22,8 @@ header {
 /* Main Content */
 main {
   background-color: lightblue;
+  /* Make main element take up any surplus space push footer down */
+  flex: 1 0 auto;
 }
 
 /* Footer */
