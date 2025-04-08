@@ -28,8 +28,16 @@ header {
   box-shadow: 0 2px 2px #3a3a3a; /* Adds shadow effects around an element's frame. The syntax for box shadow looks similar to the border shorthand */
 }
 
+header a {
+text-decoration:none ;
+color: inherit; /* This will take care of the default link color being applied by the browser */
+}
+
 h1 {
     font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Space between the letters*/
+    color: #252525;
 }
 
 /* Main Content */
