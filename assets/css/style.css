@@ -26,11 +26,15 @@ header {
   z-index: 99;
   width: 100%; /* Making sure the Header fills 100% the width of the screen. Without it, the width will take up as much space as the content */
   box-shadow: 0 2px 2px #3a3a3a; /* Adds shadow effects around an element's frame. The syntax for box shadow looks similar to the border shorthand */
+  display: flex; /* Making the check list appears on the top right of the screen after logo */
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 header a {
   text-decoration: none;
   color: inherit; /* This will take care of the default link color being applied by the browser */
+
 }
 
 h1 {
@@ -65,7 +69,22 @@ nav {
     padding:0 1rem;
     box-shadow:0 2px 2px #3a3a3a;
     display: none; /*Make the navbar hidden until the user clicks to open them*/
+    top: 100%; /*Fixing the menu covering the rest of the header by telling the nav element that its top should start at the bottom of its parent.*/
 
+}
+
+/* Nav toggle*/
+#nav-toggle:checked~nav {
+    display:block
+}
+
+/* Hide the checkbox of the Nav toggle*/
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-lable {
+    font-size: 2rem;
 }
 
 /* Main Content */
