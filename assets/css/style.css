@@ -1,5 +1,5 @@
 /* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap");
 
 /* Asterisk wildcard selector to override default styles added by the browser. In this case setting all elements in the HTML document with the settings above  */
 * {
@@ -10,18 +10,18 @@
 
 /* General styles */
 body {
-    min-height: 100vh; /*allow it to stretch larger than the height of the screen when there isnt enough content on the page that the user needs to scroll.*/
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
-    color: #3a3a3a;
-    font-family: "Lato", sans-serif;
-}   
+  min-height: 100vh; /*allow it to stretch larger than the height of the screen when there isnt enough content on the page that the user needs to scroll.*/
+  display: flex;
+  flex-direction: column;
+  /* Generic project styles */
+  color: #3a3a3a;
+  font-family: "Lato", sans-serif;
+}
 
 /* Header */
 header {
   background-color: #ffffff;
-  padding:0 1rem;
+  padding: 0 1rem;
   position: fixed; /*When we set the position to fixed, the width of the element is affected because it reverts to content width*/
   z-index: 99;
   width: 100%; /* Making sure the Header fills 100% the width of the screen. Without it, the width will take up as much space as the content */
@@ -29,15 +29,31 @@ header {
 }
 
 header a {
-text-decoration:none ;
-color: inherit; /* This will take care of the default link color being applied by the browser */
+  text-decoration: none;
+  color: inherit; /* This will take care of the default link color being applied by the browser */
 }
 
 h1 {
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px; /* Space between the letters*/
-    color: #252525;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Space between the letters*/
+  color: #252525;
+}
+
+#menu {
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+/* Spacing out vertically the itens Home, Gallery & Sing Up*/
+#menu>li {
+    margin-bottom: 1em;
+}
+
+/* Show to our users where they are in the website.*/
+.active {
+    border-bottom: 1px solid #3a3a3a;
 }
 
 /* Main Content */
@@ -51,4 +67,3 @@ main {
 footer {
   background-color: orange;
 }
-
