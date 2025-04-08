@@ -20,8 +20,12 @@ body {
 
 /* Header */
 header {
-  background-color: lightcoral;
-  
+  background-color: #ffffff;
+  padding:0 1rem;
+  position: fixed; /*When we set the position to fixed, the width of the element is affected because it reverts to content width*/
+  z-index: 99;
+  width: 100%; /* Making sure the Header fills 100% the width of the screen. Without it, the width will take up as much space as the content */
+  box-shadow: 0 2px 2px #3a3a3a; /* Adds shadow effects around an element's frame. The syntax for box shadow looks similar to the border shorthand */
 }
 
 h1 {
