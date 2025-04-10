@@ -34,7 +34,6 @@ header {
 header a {
   text-decoration: none;
   color: inherit; /* This will take care of the default link color being applied by the browser */
-
 }
 
 h1 {
@@ -45,46 +44,45 @@ h1 {
 }
 
 #menu {
-    font-size: 1.1rem;
-    letter-spacing: 4px;
-    list-style-type: none;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  list-style-type: none;
 }
 
 /* Spacing out vertically the itens Home, Gallery & Sing Up*/
-#menu>li {
-    margin-bottom: 1em;
+#menu > li {
+  margin-bottom: 1em;
 }
 
 /* Show to our users where they are in the website.*/
 .active {
-    border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
 }
 /*Navbar styles with dropdown toggle*/
 nav {
-    position: absolute; /*Nav element now shows outside the header. The style applied to the header is not valid anymore such as background-color*/
-    /* Fixing the header styles not applied to the nav anymore*/
-    background-color: #ffffff;
-    width: 100%;
-    left: 0;
-    padding:0 1rem;
-    box-shadow:0 2px 2px #3a3a3a;
-    display: none; /*Make the navbar hidden until the user clicks to open them*/
-    top: 100%; /*Fixing the menu covering the rest of the header by telling the nav element that its top should start at the bottom of its parent.*/
-
+  position: absolute; /*Nav element now shows outside the header. The style applied to the header is not valid anymore such as background-color*/
+  /* Fixing the header styles not applied to the nav anymore*/
+  background-color: #ffffff;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none; /*Make the navbar hidden until the user clicks to open them*/
+  top: 100%; /*Fixing the menu covering the rest of the header by telling the nav element that its top should start at the bottom of its parent.*/
 }
 
 /* Nav toggle*/
-#nav-toggle:checked~nav {
-    display:block
+#nav-toggle:checked ~ nav {
+  display: block;
 }
 
 /* Hide the checkbox of the Nav toggle*/
 #nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-toggle-lable {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Main Content */
@@ -98,4 +96,29 @@ main {
 /* Footer */
 footer {
   background-color: orange;
+}
+
+/*Media query: tablets and larger (768px and up)*/
+@media screen and (min-width: 768px) {
+  /*Header (Make sure the navbar is aways display)*/
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content; /*it no longer takes up all of the space in the header, allowing our flex styles from earlier to push it nicely to the right*/
+    padding-right: 1rem;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu>li {
+    padding-left: 1rem;
+  }
+
+  .nav-toggle-lable {
+    display: none;
+  }
+
 }
