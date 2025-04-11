@@ -87,10 +87,19 @@ nav {
 
 /* Main Content */
 main {
-  background-color: lightblue;
+  
   /* Make main element take up any surplus space push footer down */
   flex: 1 0 auto;
   margin-top: 47px;
+}
+
+/*Hero Section*/
+#hero {
+  height:600px; /*Make sure the image has space to show up*/
+  width: 100%; /*Spans the entire width of the screen*/
+  background: url("../images/hero-image.webp") no-repeat center center/cover;
+
+
 }
 
 /* Footer */
