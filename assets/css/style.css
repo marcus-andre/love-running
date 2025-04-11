@@ -94,10 +94,19 @@ main {
 }
 
 /* Footer */
-footer {
-  background-color: orange;
+#social-networks {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
-
+/*Styling the icons*/
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
+}
 /*Media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
   /*Header (Make sure the navbar is aways display)*/
@@ -113,7 +122,7 @@ footer {
     display: flex;
   }
 
-  #menu>li {
+  #menu > li {
     padding-left: 1rem;
   }
   /*Hiding checklist*/
@@ -132,14 +141,11 @@ footer {
     /*Push main content down to accomodate larger header*/
     margin-top: 79px;
   }
-
 }
 
 /*Media Query: Screen size of 992px and larger*/
 @media screen and (min-width: 992px) {
-
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
   }
-
 }
