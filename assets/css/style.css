@@ -31,7 +31,7 @@ h3 {
 }
 
 .hidden-heading {
-  display:none;
+  display: none;
 }
 
 /* Header */
@@ -207,6 +207,18 @@ main {
 #times h3 {
   /*Override the heading color set in general styles*/
   color: #fafafa;
+}
+
+/*Gallery Page*/
+#photos img {
+  width: 100%;
+  line-height: 1em;
+}
+
+#photos {
+  /*By default, the images in here are in line elements, which are treated like text.Text has an automatic line height to vertically space out the lines,
+which is causing the white space. So lets fix that*/
+  line-height: 0;
 }
 
 /* Footer */
