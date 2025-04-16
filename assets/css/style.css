@@ -109,6 +109,8 @@ main {
   /* Make main element take up any surplus space push footer down */
   flex: 1 0 auto;
   margin-top: 47px;
+  display: flex;
+  flex-direction: column;
 }
 
 /*Reasons section*/
@@ -221,6 +223,51 @@ which is causing the white space. So lets fix that*/
   line-height: 0;
 }
 
+/*Signup Page*/
+
+
+#signup {
+  background: url("../images/signup-image.webp") no-repeat 75%/cover;
+  flex-grow: 1;
+  padding: 20px 10% 0 10%;
+}
+
+#signup-form>h2 {
+  color: #fafafa;
+  padding-bottom: 20px;
+}
+
+#signup-form {
+  color: #ffffff;
+  background-color: rgb(60, 60, 60, .6);
+  padding: 30px;
+}
+
+.text-input {
+  color: #fafafa;
+  background: transparent;
+  border: 1px solid #fafafa;
+  height: 25px;
+  width: 100%;
+  margin: 5px 0 20px 0;
+  border-radius: 2px;
+  padding: 0 5px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.join-button {
+  margin: 20px;
+  border-radius: 2px;
+  background-color: #454b1b;
+  color: #fafafa;
+  padding: 15px 32px;
+  font-size: 100%;
+}
 /* Footer */
 #social-networks {
   text-align: center;
